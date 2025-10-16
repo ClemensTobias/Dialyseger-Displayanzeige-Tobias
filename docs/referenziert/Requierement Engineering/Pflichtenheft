@@ -1,0 +1,23 @@
+1. Anzeigeelemente
+
+    -Anzeigeelemente werden gut sichtbar und kontastreich implementiert
+    -Anzeigeelemente werden Übersichtilich gruppiert und als gruppe platziert
+
+    -Die Anzeige hat eine maximale Verzögerung von 500 ms bei Sensorwertänderungen
+    -Warnungen erscheinen innerhalb von 1 Sekunde nach dem Grenzwertüberschreiten
+
+2. Warnanzeigen
+
+    - Warnungen müssen gut sichtbar sein
+    - Warnungen müssen leicht erkennbar sein
+    - Warnungen dürfen die Sichtbarkeit anderer Elemente nicht beeinflussen
+
+3. Linien Diagramme
+
+    - Die UF Rate wird über die letzen 10 Sekunden in ml/h
+    - Der Arterielle und Venöse Druck der letzen 10 Sekunden werden in mmHg angezeigt
+
+4. Dialysezeit
+
+    - Nach Ablauf der Dialysezeit werden alle anzeigen gestoppt 
+    - Es wird eine Benachrichtigung angezeigt das der DialyseVorgang beendet ist
