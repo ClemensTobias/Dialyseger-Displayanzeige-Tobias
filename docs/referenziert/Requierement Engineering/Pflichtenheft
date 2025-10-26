@@ -1,23 +1,72 @@
 1. Anzeigeelemente
 
-    -Anzeigeelemente werden gut sichtbar und kontastreich implementiert
-    -Anzeigeelemente werden Übersichtilich gruppiert und als gruppe platziert
+Dialyse Zeit:
 
-    -Die Anzeige hat eine maximale Verzögerung von 500 ms bei Sensorwertänderungen
-    -Warnungen erscheinen innerhalb von 1 Sekunde nach dem Grenzwertüberschreiten
+    - Die verbleibende Dialysezeit wird Zentral auf dem Display im format hh:mm:ss dargestellt
+
+UF Werte:
+
+    - Die UF Werte werden ganz oben im Display zentriert als viereckige kacheln dargestellt
+
+    - Die Werte werden in folgender Reihenfolge (von links beginnend) dargestellt: UF-Ziel, UF-Menge, UF-Rate
+
+    - Unter den Namen(UF-Ziel / UF-Menge/ UF-Rate) wird die Einheit(ml bzw. ml/min) dargestellt und unter der Einheit dann die jeweiligen Werte als Ganzzahl in ml bzw. ml/min
+
+
+Dialysat: 
+
+    - An der linken oberen Ecke wird die Dialysetemperatur als viereckige kachel platziert
+
+    - Die Kachel wird mit dem Namen (Dialysetemperatur), darunter die Einheit(°C) und unter der Einheit die akutelle Temperatur als Ganzzahl in °C dargestellt
+
+    - An der rechten oberen Ecke wird die verbleibende Dialysat Menge als viereckige kachel platziert
+
+    - Die Kachel wird mit dem Bezeichner(Dialysat Menge), darunter die Einheit(L) und unter der Einheit der akutelle Füllstand als Ganzzahl in L dargestellt
+
+
+Venöser & Artierieller Druck
+
+    - Der venöse Druck wird ganz links unter der Dialysattemperatur als viereckicke kachel platziert
+
+    - Die Kachel wird mit Bezeichner (Venöser Druck), darunter die Einheit (mmHg) und darunter der Aktuelle Venöse Druck als Ganzzahl in mmHg dargestellt
+
+    - Der restliche Displayplatz auf der linken Seite wird zur Darstellung des Venösen Drucks als karriertes Liniendiagramm verwendet
+
+
+
+    - der Arterielle Druck wird ganz rechts unter der Dialyse Menge als viereckige Kachel platziert
+
+    - Die Kachel wird mit Bezeichner (Arterieller Druck), darunter die Einheit (mmHg) und darunter der Aktuelle Arterielle Druck als Ganzzahl in mmHg dargestellt
+
+    - Der restliche Displayplatz auf der rechten Seite wird zur Darstellung des Arteriellen Drucks als karriertes Liniendiagramm verwendet
+
+    
+    - Alle Anzeige haben eine maximale Verzögerung von 500 ms bei Sensorwertänderungen
+
 
 2. Warnanzeigen
 
-    - Warnungen müssen gut sichtbar sein
-    - Warnungen müssen leicht erkennbar sein
-    - Warnungen dürfen die Sichtbarkeit anderer Elemente nicht beeinflussen
+    - Warnungen werden inenrhalb einer rechteckigen kachel dargestellt
 
-3. Linien Diagramme
+    - Die äußeren Linien des Rechtecks sind rot hervorgehoben
 
-    - Die UF Rate wird über die letzen 10 Sekunden in ml/h
-    - Der Arterielle und Venöse Druck der letzen 10 Sekunden werden in mmHg angezeigt
+    - Warnungen erscheinen innerhalb von 1 Sekunde nach dem überschreiten von Grenzwerten
+
+    - Die Warnungen erscheinen am unteren Bildschirmrand im freien Platz unter der verlbeibenden dialysezeit und zwischen den Linien Diagrammen des Arteriellen und Venösen Drucks angezeigt
+
+    - Warnungen zeigen eine Kurzebeschreibung an, wodruch das Problem aufgetreten ist
+
+3. gerasterte Linien Diagramme
+
+    - Die Diagramm zeigt den Arteriellen druck der letzen 10s als Linie in mmHg an
+
+    - Eine Kachel stellt in der breite 2s und in der Höhe 200 mlHg dar
+
+    - Das Linien diagramm kann einen Druck zwischen -800 und +800 mmHg darstellen
+    
 
 4. Dialysezeit
 
     - Nach Ablauf der Dialysezeit werden alle anzeigen gestoppt 
-    - Es wird eine Benachrichtigung angezeigt das der DialyseVorgang beendet ist
+
+    - Es wird eine Benachrichtigung angezeigt das der Dialyse Vorgang beendet ist

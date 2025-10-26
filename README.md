@@ -13,4 +13,4 @@ Teilfunktionalitäten:
 
 4. Anzeige der Dialysezeit
 
-5. Graphische Auswertung der UF-Rate, Arteriellen und Venösem Druck
+5. Graphische Auswertung des Arteriellen und Venösen Drucks

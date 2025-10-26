@@ -1,36 +1,38 @@
-1. Der Venöse und Arterielle Druck werden eindeutig und Verständlich angezeigt
+1. Der Venöse und Arterielle Druck werden als Ganzzahl in mmHg dargestellt
 
-    - Änderungen werden ohne spürbare Verzögerung im display akutalisiert
+    - Änderungen werden innerhalb von 500ms im display akutalisiert
 
-    - Wenn die gemessenen Werte stark von den Normalwerten abweichen wird eine Fehlermeldung ausgegeben
+    - Sobald der Venöse Druck den Normalbereich von -700 bis +750 mmHg verlässt wird eine Warnung angezeigt
 
-2. UF Ziel, UF Menge und UF Rate werden Eindeutig und Verständlich angezeigt
+    - Sobald der Arterielle Druck den Normalbereich von -700 bis +750mmHg verlässt wird eine Warnung angezeigt
 
-    - Änderungen werden ohne spürbare Verzögerung im display akutalisiert
+2. UF Ziel, UF Menge und UF Rate werden in ml bzw. in mL/min angezeigt
 
-    - Sollte die UF Rate von Normalwerten abweichen wird eine Fehlermeldung ausgegeben
+    - Änderungen werden innerhalb von 500ms im display akutalisiert
 
     - Wenn die UF Menge das UF Ziel übersteigt wird eine Fehlermeldung ausgegeben und der Dialyse vorgang
         beendet
 
-3. Füllstand und Temperatur des Dialysats müssen eindeutig und Verständlich angezeigt werden
+3. Füllstand und Temperatur des Dialysats werden in ml und °C angezeigt
 
-    - Änderungen des Dialysat Füllstands und der Dialysat Temperatur werden ohne spürbare Verzögerung im display akutalisiert
+    - Änderungen des Dialysat Füllstands und der Dialysat Temperatur werden innerhlab von 500ms im display akutalisiert
 
-    - Sobald der Füllstand des Dialysats eine grund Füllhöhe unterschreitet wird eine Warnung angezeigt
+    - Sobald der Füllstand des Dialysats eine grund Füllhöhe von 10 L unterschreitet wird eine Warnung angezeigt
 
-    - Sobald der Füllstand des Dialysats null erreicht wird eine Warnung angezeigt
+    - Sobald der Füllstand des Dialysats null erreicht wird eine Warnung angezeigt und der Dialysevorgang unterbrochen
 
-    - Sobald die Temperatur des Dialysats eine maximal/minimal Temperatur über/unterschreitet wird eine Warnung ausgegeben
+    - Sobald die Temperatur des Dialysats den normalbereich von 34-39°C verlässt wird eine Warnung ausgegeben
 
-4. Die Verbleibende Zeit für die Dialyse wird sekundengenau angezeigt
+4. Die Verbleibende Zeit für die Dialyse wird Ganzzahling in sekunden angezeigt
 
-5. Die zeitliche änderung des Venöse und Arteriellen Druck werden in einem Liniendiagramm angezeigt
+    - Sobald die Verbleibende Dialysezeit 0s erreicht wird der Dialysevorgang gestoppt
 
-6. Die Zeitliche Veränderung der UF Rate wird als Linien Diagramm dargestellt
+5. Die zeitliche änderung des Venöse und Arteriellen Druck werden in einem gerastertem Liniendiagramm angezeigt
 
-7. Alle Anzeigen sind für Farbenblinde Erkennbar
+    - Die Darstellung erfolgt über 10 sekunden
 
-8. Die Anzeige ist Hell genug um alle Werte erkennbar darzustellen
+    - Die Anzeige wird alle 500ms aktualisiert
+
+    - Arterieller und Venöser Druck werden in mmgH angegeben
 
 

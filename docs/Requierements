@@ -24,9 +24,7 @@ NR  |                  Titel                   |                       Beschreib
         Dialysezeit
 
 5.1     Arteriendruck und Venösen Druck            Berechnung der Blutdruckwerte über den Dialyse
-        graphisch ausgeben                         zeitraum und ausgabe als Linien Diagramm
-
-5.2     UF Rate graphisch ausgeben                 Berechnung und Ausgabe der UF Rate als Linien Diagramm    
+        graphisch ausgeben                         zeitraum und ausgabe als Linien Diagramm 
 
 
 
@@ -50,6 +48,7 @@ NR  |                  Titel                   |                       Beschreib
 
 3.5     Warnung bei zu hoher oder niedriger         Warnung bei messung einer Temperatur über oder unter
         Dialysat Temperatur                         dem optimalen Temperaturbereich für Dialysat
+        
 
 Abhängigkeiten zwischen Requierements
 --------------------------------------------------------------------------------------------------------
