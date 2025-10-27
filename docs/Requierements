@@ -3,28 +3,37 @@
 
 --------------------------------------------------------------------------------------------------------
 NR  |                  Titel                   |                       Beschreibung                     |
-1.1    Automatische Messung des Arteriendrucks     Anzeige des Arteriendrucks
+1.1    Darstellung des Arteriendrucks              Anzeige des Arteriendrucks
 
-1.2    Automatische Messung des Venösen Drucks     Anzeige des Venösen Drucks
+1.2    Darstellung des Venösen Drucks              Anzeige des Venösen Drucks
 
-2.1     Automatische Messung der UF Menge          Anzeigen der UF Menge
+2.1    Darstellung der  UF Menge                   Anzeigen der UF Menge
 
-2.2     Berechnung der UF Rate                     Berechnung und Anzeige der UF Rate
+2.2     Berechnung der UF Rate                     Berechnung 
 
 2.3     Anzeigen des UF Ziels                      Anzeigen des UF Ziels
 
-3.1     Messung des Dialysat Füllstands            Anzeige des Verbleibenden Dialysefüllstands
+2.5     Anzeige der UF Rate                        Anzeige der UF Rate
 
-3.2     Messung der Dialysat Temperatur            Anzeige der Dialysetemperatur
+2.6     Berechnung der UF Menge                    Berechnung der aktuell erreichten UF-Menge
 
-4.1     Messung der Dialysezeit                    Anzeige der Verbleibenden Dialysezeit
+3.1     Anzeige des Dialysat Füllstands            Anzeige des Verbleibenden Dialysefüllstands
 
-4.2     Automatisches Beenden der Dialyse          Nach ablauf der Dialysezeit wird die dialyse 
-        nach ablauf der vorher definierten         automatisch beendet werden
-        Dialysezeit
+3.2     Anzeige der Dialysat Temperatur            Anzeige der Dialysetemperatur
 
-5.1     Arteriendruck und Venösen Druck            Berechnung der Blutdruckwerte über den Dialyse
-        graphisch ausgeben                         zeitraum und ausgabe als Linien Diagramm 
+4.1     Anzeige der Dialysezeit                    Anzeige der Verbleibenden Dialysezeit
+
+5.1     Arteriendruck graphisch darstellen         Darstellung des Arteriendrucks der letzen 10 Sekunden
+                                                   in einem gerasterten Liniendiagramm
+
+5.2     Venösendruck graphisch darstellen         Darstellung des Venösen Drucks der letzen 10 Sekunden
+                                                  in einem gerasterten Liniendiagramm
+
+5.3     Speicherung des Arteriellen Drucks        Der Wert des Arteriellen Drucks der letzen 10s wird 
+        der letzen 10s                            zwischengespeichert
+
+5.4     Speicherung des Arteriellen Drucks        Der Wert des Venösen Drucks der letzen 10s wird 
+        der letzen 10s                            zwischengespeichert
 
 
 
@@ -67,6 +76,34 @@ Abhängigkeiten zwischen Requierements
 5.1               berechnet (3.2) werden
 
 
+Nicht impementierte Funktionale Requieremnts
+
+--------------------------------------------------------------------------------------------------------
+NR  |                  Titel                   |                       Beschreibung                     |
+
+1.3     Messung des Arteriellen Drucks           Messen des aktuellen Arteriellen Drucks
+
+1.4     Messung des Venösen Drucks               Messen des akutellen Venösen Drucks
+
+1.5     Terminierung der Dialyse bei            Abbrechen des Dialysevorgangs, sobald der Normalwertbereich
+        zu hohen/niedriegen werten              (-700 bis + 750 mmHg) verlassen wird
+
+2.4    Beendung der Dialyse bei erreichen       Sobald das UF-Ziel erreicht wird, wird die Dialyse
+        des UF-Ziels                            beendet
+
+3.3     Beendung der Dialyse sobald Dialysat    Die Dialyse wird beendet wenn kein Dialysat mehr
+        aufgebarucht ist                        vorhanden ist
+
+3.4     Beendung der Dialyse bei erreichen      Sobald das Dialysat den temperatur normalbereich
+        von Grenztemperaturen des Dialysats     (34 - 39 °C) verlässt wird die Dialyse beendet
+
+3.5     Messung des Dialysat Füllstands         Messung des aktuellen Dialysat Füllstands
+
+3.6     Messung der Dialysat Temperatur         Messung der aktuellen Dialysat Temperatur
+
+4.2     Automatisches Beenden der Dialyse        Nach ablauf der Dialysezeit wird die dialyse 
+        nach ablauf der vorher definierten       automatisch beendet werden
+        Dialysezeit
 
 
 
