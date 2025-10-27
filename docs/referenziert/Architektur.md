@@ -5,7 +5,7 @@
 ##Komponentendiagramm
 
 
-![Komponenten Diagramm](docs/referenziert/Komponentendiagramm.png)
+![Komponenten Diagramm](Komponentendiagramm.png)
 
 | | **Komponente** | **Requirements** |
 |:-:|:---|:---|
