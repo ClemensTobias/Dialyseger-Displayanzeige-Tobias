@@ -29,6 +29,9 @@ NR  |                  Titel                   |                       Beschreib
 
 4.1     Anzeige der Dialysezeit                    Anzeige der Verbleibenden Dialysezeit
 
+4.2     Button zum erhöhen/verringern              Darstellung von 2 Knöpfen, mit denen die Dialysezeit
+        der Dialysezeit                            jeweils in 30s Schritten verändert werden kann
+
 5.1     Arteriendruck graphisch darstellen         Darstellung des Arteriendrucks der letzen 10 Sekunden
                                                    in einem gerasterten Liniendiagramm
 
@@ -107,7 +110,7 @@ NR  |                  Titel                   |                       Beschreib
 
 3.6     Messung der Dialysat Temperatur         Messung der aktuellen Dialysat Temperatur
 
-4.2     Automatisches Beenden der Dialyse        Nach ablauf der Dialysezeit wird die dialyse 
+4.3     Automatisches Beenden der Dialyse        Nach ablauf der Dialysezeit wird die dialyse 
         nach ablauf der vorher definierten       automatisch beendet werden
         Dialysezeit
 
