@@ -27,6 +27,9 @@
 
     - Sobald die Verbleibende Dialysezeit 0s erreicht wird der Dialysevorgang gestoppt
 
+    - Es soll einen Knopf zur Erhöhung der Dialysezeit und einer zur verringerung angezeigt werden, wobei
+      die Dialysezeit immer in 30s Schritten verändert wird
+
 5. Die zeitliche änderung des Venöse und Arteriellen Druck werden in einem gerastertem Liniendiagramm angezeigt
 
     - Die Darstellung erfolgt über 10 sekunden
