@@ -6,5 +6,6 @@ In Folgendem Klassendiagramm werden die Klassen des 1 Sprints, inklusive ihrer P
 
 ![Klassendiagramm](../referenziert/Design/Klassendiagramm.png)
 
+## Sequenzdiagramm
 
 ![SequenzDiagramm](../referenziert/Design/Sequenzdiagramm.png)
