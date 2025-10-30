@@ -9,7 +9,7 @@
 
 | | **Komponente** | **Requirements** |
 |:-:|:---|:---|
-| 4 | **Display output** | Req. 1.1, Req. 1.2, Req. 2.1, Req. 2.5 Req. 2.3, Req. 3.1, Req. 3.2, Req. 4.1, Req. 5.1, Req. 5.2 |
+| 4 | **Display output** | Req. 1.1, Req. 1.2, Req. 2.1, Req. 2.5 Req. 2.3, Req. 3.1, Req. 3.2, Req. 4.1, Req. 4.2 Req. 5.1, Req. 5.2 |
 | 3 | **Calculation Logic (Anwendungslogik/Core)** | Req. 1.3, Req. 1.4, Req. 2.2, Req. 2.4 Req. 2.6, Req. 3.3, Req. 3.4, Req. 3.5 Req. 5.1, Req. 5.2 |
 | 2 | **Hardware Abstraction** | Req. 1.3, Req. 1.4, Req. 3.5, Req. 3.6 |
 | 1 | **Persistence Manager** | Req. 5.3, Req. 5.4 |
