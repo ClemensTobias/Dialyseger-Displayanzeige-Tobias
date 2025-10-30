@@ -9,11 +9,16 @@ eine grundlegende Funktionalität der Aplikation festzulegen. Dafür sollen folg
 
 - Darstellung der verbleibenden Dialysezeit im Format hh:mm:ss
 
+- Darstellung von 2 Knöpfen um die Dialysezeit zu erhöhen
+
+- Darstellen eines Start/Stop knopf, der die dialyse Startet/stoppt
+
 - Simulation der Hardwarekomponenten zur Ermittlung der Werte
 
 Diese Funktionen wurden gewählt, da die Darstellung, sowie die Simulation der Bereitstellung der benötigten Werte,
 spezifisch für den Venösen und Arterillen Druck in kombination mit der Dialysezeit die wichtigsten Komponenten in
-der Displayanzeige festlgegen.
+der Displayanzeige festlgegen. Zusätzlich wird noch ein Start/Stop knopf hinzugefügt, um die Displayanzeige überhaupt starten
+zu können.
 
 Requierements:
 
@@ -22,6 +27,7 @@ Req. 1.2
 Req. 1.3
 Req. 1.4
 Req. 4.1
+Req. 4.2
 
 ## Architektur
 
