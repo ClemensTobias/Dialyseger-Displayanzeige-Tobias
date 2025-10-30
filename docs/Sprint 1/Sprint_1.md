@@ -5,9 +5,9 @@
 Zu beginn soll festgelet werden welche Requirements im ersten Sprint realisiert werden sollen. Dabei liegt der Fokus darauf 
 eine grundlegende Funktionalität der Aplikation festzulegen. Dafür sollen folgende Kernfunktionen implementiert werden:
 
-- Darstellung des Venösen und Arteriellen Drucks als Ganzzahl
+- Darstellung des Venösen und Arteriellen Drucks als Ganzzahl in mmHg
 
-- Darstellung der verbleibenden Dialysezeit
+- Darstellung der verbleibenden Dialysezeit im Format hh:mm:ss
 
 - Simulation der Hardwarekomponenten zur Ermittlung der Werte
 
@@ -23,5 +23,14 @@ Req. 1.3
 Req. 1.4
 Req. 4.1
 
+## Architektur
 
+Basierend auf den hier ausgewählten Requierements wurde die Archektur dahingehend angepasst, die funktion und Zuordung der 
+Requirements des 1. Sprints zu verdeutlichen
+
+
+## Design
+
+Zusätzlich wurden für die Requirements des 1. Sprints ein erstes Klassendiagramm, ein dazu passendes Sequenzdiagramm und 
+ein Kommunikationsdiagramm erstellt
 
