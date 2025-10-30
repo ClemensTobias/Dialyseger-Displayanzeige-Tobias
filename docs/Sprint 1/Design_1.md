@@ -1,0 +1,4 @@
+# Design
+
+## Klassendiagramm
+
