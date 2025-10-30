@@ -4,6 +4,11 @@ Dialyse Zeit:
 
     - Die verbleibende Dialysezeit wird Zentral auf dem Display im format hh:mm:ss dargestellt
 
+    - Zentriert unter der Dialysezeit werden zwei Knöpfe, jeweils zum erhöhen und verringern
+      der Dialysezeit platzier
+
+    - Die änderung der Dialysezeit durch die knöpfe erfolgt dabe immer in 30s Schritten
+
 UF Werte:
 
     - Die UF Werte werden ganz oben im Display zentriert als viereckige kacheln dargestellt
