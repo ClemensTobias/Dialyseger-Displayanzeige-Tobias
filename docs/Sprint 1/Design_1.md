@@ -10,5 +10,6 @@ In Folgendem Klassendiagramm werden die Klassen des 1 Sprints, inklusive ihrer P
 
 ![SequenzDiagramm](../referenziert/Design/Sequenzdiagramm.png)
 
-ToDo:
-KommunikationsDiagramm und Tracability Matrix werden freitag Nachmittag bearbeitet
+## Kommunikationsdiagramm
+
+![SequenzDiagramm](../referenziert/Design/Kommunikationsdiagramm.png)
