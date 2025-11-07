@@ -13,3 +13,11 @@ In Folgendem Klassendiagramm werden die Klassen des 1 Sprints, inklusive ihrer P
 ## Kommunikationsdiagramm
 
 ![SequenzDiagramm](../referenziert/Design/Kommunikationsdiagramm.png)
+
+
+## Designpatterns
+
+| Klasse                     | Design-Pattern | Grund                                                                                                                      |
+|----------------------------|----------------|----------------------------------------------------------------------------------------------------------------------------|
+| Display                    | Observer       | Display muss automatisch aktualisiert werden, sobald sich einer der dargestellten Werte ändert. Durch das Observer pattern wird die Anzeige von den Simulatoren entkoppelt |
+| TimerButton                | Command        | Verantwortlich für die Verarbeitung der Veränderung der Dialysezeit durch Benutzer interaktion       |
