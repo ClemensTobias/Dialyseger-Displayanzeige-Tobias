@@ -5,7 +5,7 @@
 ##Komponentendiagramm
 
 
-![Komponenten Diagramm](Komponentendiagramm.png)
+![Architektur](./Design/Sprint_1_Architektur.png)
 
 | | **Komponente** | **Requirements** |
 |:-:|:---|:---|
