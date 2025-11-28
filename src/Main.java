@@ -1,15 +1,13 @@
 import javax.swing.JLabel;
 
-import HardwareAbstraction.PressureSimulator;
-
 public class Main{
 
     public static void main(String[] args) {
 
-        JLabel arterialPressure = Display.createLabel(() -> PressureSimulator.generateRandomArterialPressure(),
+        JLabel arterialPressure = Display.createLabel(() -> ArterialPressureSimulator.generateRandomArterialPressure(),
          "Arterieller Druck", "in mmHg", 10, 50);
 
-        JLabel venousPressure = Display.createLabel(() -> PressureSimulator.generateRandomArterialPressure(),
+        JLabel venousPressure = Display.createLabel(() -> VenousPressureSimulator.generateRandomArterialPressure(),
          "Venöser Druck", "in mmHg", 570, 50);
 
         JLabel timer = Display.createLabel(() -> Display.updateTime(),

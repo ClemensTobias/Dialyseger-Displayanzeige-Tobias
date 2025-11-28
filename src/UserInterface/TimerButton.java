@@ -3,7 +3,7 @@ public class TimerButton{
 /**
  * increses the remaining time by 30s
  */
-public static void increaseTimeRemaining() {
+public static void addTime() {
 
     Display.remainingTime = Display.remainingTime.plusSeconds(30);
 
@@ -12,7 +12,7 @@ public static void increaseTimeRemaining() {
 /**
  * Decreses the remaining time by 30s
  */
-public static void decreaseTimeRemaining(){
+public static void decreaseTime(){
 
     Display.remainingTime = Display.remainingTime.minusSeconds(30);
     

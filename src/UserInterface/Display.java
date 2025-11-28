@@ -30,7 +30,7 @@ public class Display extends JFrame implements ActionListener{
      * @param label2
      * @param label3
      */
-    public void createFrame(JLabel label, JLabel label2, JLabel label3){
+    public void createFrame(JLabel arterialPressure, JLabel venousPressure, JLabel timer){
 
         JFrame display = new JFrame();
 
@@ -41,9 +41,9 @@ public class Display extends JFrame implements ActionListener{
 
         display.setVisible(true);
 
-        display.add(label);
-        display.add(label2);
-        display.add(label3);
+        display.add(arterialPressure);
+        display.add(venousPressure);
+        display.add(timer);
 
         startStopButton = new JButton();
         startStopButton.setBounds(325, 405, 100, 50);
@@ -130,15 +130,15 @@ public class Display extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==addRemainingTimeButton) {
-            TimerButton.increaseTimeRemaining();
+            TimerButton.addTime();
         }
 
         if(e.getSource()==decreaseRemainingTimeButton) {
-            TimerButton.decreaseTimeRemaining();
+            TimerButton.decreaseTime();
         }
 
         if(e.getSource()==startStopButton) {
-            StartStopButton.changeState();
+            StartStopButton.startStop();
         }
 
     }

@@ -1,6 +1,6 @@
-package HardwareAbstraction;
 
-public class PressureSimulator {
+
+public class VenousPressureSimulator {
 
     /**
      * a very bare bones implementation of a pressure simulator lacking any kind of realism. However since this 
@@ -8,7 +8,6 @@ public class PressureSimulator {
      * 
      * The simulation will be designed more accurately as soon as there is need to simulate more realistically
      * 
-     * Currently both Simulators are the same simply because right now, that is enough to fulfill the set tasks.
      *
      * @return
      */
