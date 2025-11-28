@@ -40,3 +40,56 @@ Requirements des 1. Sprints zu verdeutlichen
 Zusätzlich wurden für die Requirements des 1. Sprints ein erstes Klassendiagramm, ein dazu passendes Sequenzdiagramm und 
 ein Kommunikationsdiagramm erstellt
 
+## Abweichungen nach Implementierung
+
+### Architektur
+
+Aufgrund der begrenzeten anzahl an Requirements die innerhalb des 1 Sprints umgesetzt wurden ergeben sich Abweichungen zur zuvor
+festgelegten Software Architektur. Es wurden nur Requirements aus der 'Hardware Abstraction' und dem 'Display Output' ausgewält,
+wodurch sowohl der 'Persistance Manager' als auch die 'Calculation Logic' als Komponenten nicht existieren. Um den Aktuellen Stand
+nach Sprint 1 wiederzuspiegeln wurde dementsprechend die Architektur.md angepasst.
+
+### Design
+
+#### Klassendiagramm
+
+Aufgrund der Art und Weise wie die Buttons implementiert wurden, besitzt die Display Klasse, im Vergleich zum ersten Entwurf der Klasse, nun
+noch zusätzlich 3 JButtons, die initialisiert werden.
+
+Zusätzlich wurde während der implementierung nicht aufmerksam genug auf die Bennenung der Funktionsnamen geachtet, wodurch sich 
+dahingehend abweichungen befinden, die nun überarbeitet werden müssen
+
+Überarbeitetes Klassendiagramm:
+
+### Kommunikationsdiagramm
+
+Auch hier müssen die 3 JButtons als Elemente der Display Klasse hinzugefügt werden
+
+## Erkenntnisse aus 1. Sprint
+
+Die für micht wichtigste Erkenntnis aus dem 1. Sprint besteht darin, sich strickt an das sich zuvor überlegte Design zu halten. Während der
+Implementierung habe ich mich nicht genau an die Funktionsnamen aus dem zuvor überlegten Design übernommen. Dadurch kann es jetzt für
+aussenstehende schwer werden, meinen Code nachzuvollziehen. Auch für mich selbst wird es dadurch umständlicher den Überblick über bereits
+implemntierte Funktionen zu behalten
+
+Stichpunkthaltige Reflextion über den Sprint:
+
+**Positiv**
+  - Alle vorgenommenen Requirements wurden implementiert
+- Zeitplan wurde (mit 1 Ausnahme) eingehalten
+- Tests wurden erfolgreich durchgeführt
+
+**Herausforderungen**
+- Einarbeitung in tools zur Design erstellung
+- Recherche zur GUI umsetzung in java
+- Tracability Matrix korrekt zu erstellen
+
+**Gewonnene Erkenntnisse**
+- Ich werde mich im nächsten Sprint genauer an das festgelegte Design halten
+- Sollten sich während der Implementierung änderungen im Design ergeben, werde ich diese Sofort in der documentation anpassen
+
+
+
+
+
+
