@@ -91,6 +91,12 @@ Stichpunkthaltige Reflextion über den Sprint:
 - Ich werde mich im nächsten Sprint genauer an das festgelegte Design halten
 - Sollten sich während der Implementierung änderungen im Design ergeben, werde ich diese Sofort in der documentation anpassen
 
+## Baseline:
+
+Innerhalb des ersten Sprints konnten die grundelgensten funktion, wie ein timer und die implementierung eine GIU realisiert werden.
+Dadurch ist insgesammt eine solide Basis geschaffen, auf der sich zusätzliche Features schnell und einfach implementieren lassen, indem sie
+auf der aktuellen Struktur aufbauen.
+
 
 
 
