@@ -54,16 +54,19 @@ nach Sprint 1 wiederzuspiegeln wurde dementsprechend die Architektur.md angepass
 #### Klassendiagramm
 
 Aufgrund der Art und Weise wie die Buttons implementiert wurden, besitzt die Display Klasse, im Vergleich zum ersten Entwurf der Klasse, nun
-noch zusätzlich 3 JButtons, die initialisiert werden.
+noch zusätzlich 3 JButtons, die initialisiert werden. Zusätzlich verhält sich die art und weise wie Werte updated auch anders als erwartet,
+wesewegen auch die zuerst angedachten funktionen vollständig ersetzt werden müssen
 
-Zusätzlich wurde während der implementierung nicht aufmerksam genug auf die Bennenung der Funktionsnamen geachtet, wodurch sich 
+Auch wurde während der implementierung nicht aufmerksam genug auf die Bennenung der Funktionsnamen geachtet, wodurch sich 
 dahingehend abweichungen befinden, die nun überarbeitet werden müssen
 
 Überarbeitetes Klassendiagramm:
 
 ### Kommunikationsdiagramm
 
-Auch hier müssen die 3 JButtons als Elemente der Display Klasse hinzugefügt werden
+Auch hier müssen die 3 JButtons als Elemente der Display Klasse hinzugefügt werden, sowie die funktionen überarbeitet werden
+
+Überarbeitetes Kommunikationsdiagramm: 
 
 ## Erkenntnisse aus 1. Sprint
 
