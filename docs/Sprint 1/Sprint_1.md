@@ -61,13 +61,11 @@ nur einen Wert gibt der erzeugt wird, sondern dieser aus einem min und max Wert 
 Auch wurde während der implementierung nicht aufmerksam genug auf die Bennenung der Funktionsnamen geachtet, wodurch sich 
 dahingehend abweichungen befinden, die nun überarbeitet werden müssen
 
-Überarbeitetes Klassendiagramm:
-
 ### Kommunikationsdiagramm
 
 Auch hier müssen die 3 JButtons als Elemente der Display Klasse hinzugefügt werden, sowie die funktionen überarbeitet werden
 
-Überarbeitetes Kommunikationsdiagramm: 
+[Überarbeitete_Diagramme](./Design_1.md)
 
 ## Erkenntnisse aus 1. Sprint
 
