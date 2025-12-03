@@ -54,16 +54,18 @@ nach Sprint 1 wiederzuspiegeln wurde dementsprechend die Architektur.md angepass
 #### Klassendiagramm
 
 Aufgrund der Art und Weise wie die Buttons implementiert wurden, besitzt die Display Klasse, im Vergleich zum ersten Entwurf der Klasse, nun
-noch zusätzlich 3 JButtons, die initialisiert werden.
+noch zusätzlich 3 JButtons, die initialisiert werden. Zusätzlich verhält sich die art und weise wie Werte updated auch anders als erwartet,
+wesewegen auch die zuerst angedachten funktionen vollständig ersetzt werden müssen. Ähnliches gilt für die Druck Wert Generation, da es nicht
+nur einen Wert gibt der erzeugt wird, sondern dieser aus einem min und max Wert gebildet werden muss.
 
-Zusätzlich wurde während der implementierung nicht aufmerksam genug auf die Bennenung der Funktionsnamen geachtet, wodurch sich 
+Auch wurde während der implementierung nicht aufmerksam genug auf die Bennenung der Funktionsnamen geachtet, wodurch sich 
 dahingehend abweichungen befinden, die nun überarbeitet werden müssen
-
-Überarbeitetes Klassendiagramm:
 
 ### Kommunikationsdiagramm
 
-Auch hier müssen die 3 JButtons als Elemente der Display Klasse hinzugefügt werden
+Auch hier müssen die 3 JButtons als Elemente der Display Klasse hinzugefügt werden, sowie die funktionen überarbeitet werden
+
+[Überarbeitete_Diagramme](./Design_1.md)
 
 ## Erkenntnisse aus 1. Sprint
 
@@ -87,6 +89,12 @@ Stichpunkthaltige Reflextion über den Sprint:
 **Gewonnene Erkenntnisse**
 - Ich werde mich im nächsten Sprint genauer an das festgelegte Design halten
 - Sollten sich während der Implementierung änderungen im Design ergeben, werde ich diese Sofort in der documentation anpassen
+
+## Baseline:
+
+Innerhalb des ersten Sprints konnten die grundelgensten funktion, wie ein timer und die implementierung eine GIU realisiert werden.
+Dadurch ist insgesammt eine solide Basis geschaffen, auf der sich zusätzliche Features schnell und einfach implementieren lassen, indem sie
+auf der aktuellen Struktur aufbauen.
 
 
 

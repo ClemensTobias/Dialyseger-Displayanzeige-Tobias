@@ -4,7 +4,7 @@
 
 In Folgendem Klassendiagramm werden die Klassen des 1 Sprints, inklusive ihrer Parameter, Methoden und Beziehung zueinander dargestellt
 
-![Klassendiagramm](../referenziert/Design/Klassendiagramm.png)
+![Klassendiagramm](../referenziert/Design/Sprint_1_Klassendiagramm.png)
 
 ## Sequenzdiagramm
 
@@ -12,7 +12,7 @@ In Folgendem Klassendiagramm werden die Klassen des 1 Sprints, inklusive ihrer P
 
 ## Kommunikationsdiagramm
 
-![SequenzDiagramm](../referenziert/Design/Kommunikationsdiagramm.png)
+![SequenzDiagramm](../referenziert/Design/Sprint_1_Kommunikationsdiagramm.png)
 
 
 ## Designpatterns
