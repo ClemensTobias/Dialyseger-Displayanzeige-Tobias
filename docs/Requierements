@@ -23,9 +23,11 @@ NR  |                  Titel                   |                       Beschreib
 
 2.6     Berechnung der UF Menge                    Berechnung der aktuell erreichten UF-Menge
 
-3.1     Anzeige des Dialysat Füllstands            Anzeige des Verbleibenden Dialysefüllstands
+3.1     Anzeige/Simulation des                     Anzeige/Simulation des Verbleibenden Dialysat
+        Dialysat Füllstands                        Füllstands
 
-3.2     Anzeige der Dialysat Temperatur            Anzeige der Dialysetemperatur
+3.2     Anzeige/Simulation der Dialysat            Simulation/Anzeige der Dialysat Temperatur
+        Temperatur                               
 
 4.1     Anzeige der Dialysezeit                    Anzeige der Verbleibenden Dialysezeit
 
@@ -53,7 +55,7 @@ NR  |                  Titel                   |                       Beschreib
 1.3    Warnung bei Sensorausfall                   Fehlermeldungen wenn Arterien oder Venöser Druck
                                                     während der Laufzeit auf null fallen
 
-1.4     Warunung bei geringen Werten                Warnung bei zu geringem Arterien oder Venösem Druck
+1.8     Warunung bei geringen Werten                Warnung bei zu geringem Arterien oder Venösem Druck
 
 2.4     Warunung bei Sensorausfall                  Fehlermeldung wenn die gemessene UF Menge null
                                                     ergibt
@@ -94,7 +96,7 @@ NR  |                  Titel                   |                       Beschreib
 
 1.6     Messung des Venösen Drucks               Messen des akutellen Venösen Drucks
 
-1.5     Terminierung der Dialyse bei            Abbrechen des Dialysevorgangs, sobald der Normalwertbereich
+1.7     Terminierung der Dialyse bei            Abbrechen des Dialysevorgangs, sobald der Normalwertbereich
         zu hohen/niedriegen werten              (-700 bis + 750 mmHg) verlassen wird
 
 2.4    Beendung der Dialyse bei erreichen       Sobald das UF-Ziel erreicht wird, wird die Dialyse
