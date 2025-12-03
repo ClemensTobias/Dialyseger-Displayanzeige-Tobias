@@ -28,17 +28,14 @@ Arteriellen/Venösen Druck und zu geringem Dialysat Füllstand weiter ausgebaut.
 
 Requierements:
 
-Req. 2.1 
-Req. 2.3
-
-Req. 2.5
-Req. 2.6
-
-Req. 3.1
-Req. 3.2
-
-Req. 1.8
-Req. 3.3
+- Req. 2.1 
+- Req. 2.3
+- Req. 2.5
+- Req. 2.6
+- Req. 3.1
+- Req. 3.2
+- Req. 1.8
+- Req. 3.3
 
 ## Architektur
 
@@ -49,4 +46,5 @@ Basierend auf den hier ausgewählten Requierements wurde die Archtiektur aus des
 
 Zusätzlich wurden für die Requirements des 2. Sprints ein erstes Klassendiagramm, ein dazu passendes Sequenzdiagramm und 
 ein Kommunikationsdiagramm erstellt
+
 
