@@ -39,12 +39,13 @@ Requierements:
 
 ## Architektur
 
-Basierend auf den hier ausgewählten Requierements wurde die Archtiektur aus des 1 Sprints angepasst
+Basierend auf den hier ausgewählten Requierements wurde die Archtiektur des 2 Sprints angepasst
 
 
 ## Design
 
 Zusätzlich wurden für die Requirements des 2. Sprints ein erstes Klassendiagramm, ein dazu passendes Sequenzdiagramm und 
 ein Kommunikationsdiagramm erstellt
+
 
 
