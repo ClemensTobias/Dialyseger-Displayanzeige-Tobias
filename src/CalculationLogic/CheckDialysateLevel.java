@@ -1,16 +1,32 @@
 package CalculationLogic;
 
+import java.time.LocalTime;
+
+import Userinterface.Display;
+
 public class CheckDialysateLevel {
 
     static int min = 2;
     static int max = 10;
 
+    public static String ufGoal = "20";
+    static int ufCurrent = 0;
+
     static int level = 8;
-    static int flowRate = 1;
+    public static String flowRate = "1";
     static boolean dialysateLevelWarning = false;
 
-    public static void reduceByFlowRate() {
+    public static String increaseByFlowRate() {
         
+        if (Display.remainingTime == LocalTime.of(0,2,30)) {
+
+            ufCurrent += 1;
+
+        }
+
+        String ufCurrentString = String.valueOf(ufCurrent);
+
+        return ufCurrentString;
 
     }
 
@@ -25,6 +41,7 @@ public class CheckDialysateLevel {
         } else {
             dialysateLevelWarning = false;
         }
+
 
         return dialysateLevelString;
 

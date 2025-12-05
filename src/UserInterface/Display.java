@@ -1,3 +1,5 @@
+package Userinterface;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 
@@ -12,7 +14,7 @@ import java.util.function.Supplier;
 public class Display extends JFrame implements ActionListener{
 
     static boolean state = false;
-    static LocalTime remainingTime = LocalTime.of(0, 3,0);
+    public static LocalTime remainingTime = LocalTime.of(0, 3,0);
 
     static JButton addRemainingTimeButton;
     static JButton decreaseRemainingTimeButton;
@@ -30,34 +32,41 @@ public class Display extends JFrame implements ActionListener{
      * @param label2
      * @param label3
      */
-    public void createFrame(JLabel arterialPressure, JLabel venousPressure, JLabel timer, JLabel dialysateLevel){
+    public void createFrame(JLabel arterialPressure, JLabel venousPressure, JLabel timer, JLabel dialysateLevel, JLabel dialysateTemperature,
+        JLabel ufCurrent, JLabel ufRate, JLabel ufGoal
+    ){
 
         JFrame display = new JFrame();
 
         display.setTitle("Dialysegerät Display");
         display.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        display.setSize(800,800);
+        display.setSize(1220,1200);
         display.setLayout(null);
-
-        display.setVisible(true);
 
         display.add(arterialPressure);
         display.add(venousPressure);
         display.add(timer);
         display.add(dialysateLevel);
+        display.add(dialysateTemperature);
+
+        display.add(ufCurrent);
+        display.add(ufRate);
+        display.add(ufGoal);
+
+        display.setVisible(true);
 
         startStopButton = new JButton();
-        startStopButton.setBounds(325, 405, 100, 50);
+        startStopButton.setBounds(525, 405, 100, 50);
         startStopButton.setText("start");
         startStopButton.addActionListener(this);
 
         addRemainingTimeButton = new JButton();
-        addRemainingTimeButton.setBounds(480, 300, 50, 100);
+        addRemainingTimeButton.setBounds(680, 300, 50, 100);
         addRemainingTimeButton.setText("+");
         addRemainingTimeButton.addActionListener(this);
 
         decreaseRemainingTimeButton = new JButton();
-        decreaseRemainingTimeButton.setBounds(220, 300, 50, 100);
+        decreaseRemainingTimeButton.setBounds(420, 300, 50, 100);
         decreaseRemainingTimeButton.setText("-");
         decreaseRemainingTimeButton.addActionListener(this);
 
