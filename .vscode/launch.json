@@ -9,6 +9,13 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "Main",
+            "projectName": "Dialyseger-Displayanzeige-Tobias_10b2e21f"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
             "projectName": "Displayanzeige dialysegerät_c6ab3b1d"
         },
         {

@@ -30,7 +30,7 @@ public class Display extends JFrame implements ActionListener{
      * @param label2
      * @param label3
      */
-    public void createFrame(JLabel arterialPressure, JLabel venousPressure, JLabel timer){
+    public void createFrame(JLabel arterialPressure, JLabel venousPressure, JLabel timer, JLabel dialysateLevel){
 
         JFrame display = new JFrame();
 
@@ -44,6 +44,7 @@ public class Display extends JFrame implements ActionListener{
         display.add(arterialPressure);
         display.add(venousPressure);
         display.add(timer);
+        display.add(dialysateLevel);
 
         startStopButton = new JButton();
         startStopButton.setBounds(325, 405, 100, 50);
