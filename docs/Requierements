@@ -13,11 +13,9 @@ NR  |                  Titel                   |                       Beschreib
 1.4    Simulation des Venösen Drucks               Der Venöse Druck wird in Form einer Ganzzahl in
                                                    mmHg simuliert
 
-2.1    Darstellung der  UF Menge                   Anzeigen der UF Menge
+2.1    Darstellung der  UF Menge                   Anzeigen der UF Menge 
 
-2.2     Berechnung der UF Rate                     Berechnung 
-
-2.3     Anzeigen des UF Ziels                      Anzeigen des UF Ziels
+2.2     Anzeigen des UF Ziels                      Anzeigen des UF Ziels
 
 2.5     Anzeige der UF Rate                        Anzeige der UF Rate
 
@@ -52,7 +50,7 @@ NR  |                  Titel                   |                       Beschreib
 --------------------------------------------------------------------------------------------------------
 NR  |                  Titel                   |                       Beschreibung                     |
 
-1.3    Warnung bei Sensorausfall                   Fehlermeldungen wenn Arterien oder Venöser Druck
+1.9    Warnung bei Sensorausfall                   Fehlermeldungen wenn Arterien oder Venöser Druck
                                                     während der Laufzeit auf null fallen
 
 1.8     Warunung bei geringen Werten                Warnung bei zu geringem Arterien oder Venösem Druck
