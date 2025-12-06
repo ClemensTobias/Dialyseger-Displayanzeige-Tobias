@@ -67,6 +67,10 @@ Auch hier müssen die 3 JButtons als Elemente der Display Klasse hinzugefügt we
 
 [Überarbeitete_Diagramme](./Design_1.md)
 
+## Test
+
+[Tests und ergebnisse](../referenziert/Test/Test1.md)
+
 ## Erkenntnisse aus 1. Sprint
 
 Die für micht wichtigste Erkenntnis aus dem 1. Sprint besteht darin, sich strickt an das sich zuvor überlegte Design zu halten. Während der
