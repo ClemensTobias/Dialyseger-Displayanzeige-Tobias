@@ -1,3 +1,9 @@
+##Testfälle
+
+Während jedes Sprints wurden je 3 Testfälle auf Modul und 3 Testfälle auf Integrations Ebene erstellt. Um Sicherzustellen, das durch die implementierung neuen Codes keine
+vorher schon getesteten Featuers nicht mehr Funktionieren, wurden innerhalb jedes Sprints alle Testfälle erneut abgeprüft.
+Im zweiten Sprint wurden also alle Tests auf dem 1. und 2. Sprint durchgeführt und im 3 Sprint alle Tests aus dem 1. , 2. und 3 Sprints.
+
 ## Tests auf Modul Ebene
 
 | Testfall-ID | Module                         | Vorbedingung  | Aktion             | Erwartetes Ergebnis | Nachbedingung      |Korrekt abgelaufen? |
