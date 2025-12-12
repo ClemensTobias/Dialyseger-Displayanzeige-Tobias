@@ -8,6 +8,8 @@ Sprints impementiert wurden in Implementierung.md aufzufinden.
 |----------------|------------------------------------|---------------------------------------|-------------------------------------------------------------------|--------|---------|
 | 1.1            | Display output                     | `Display`                             | createFrame(),createLabel()                                        | I2    |    1    |         
 | 1.2            | Display output                     | `Display`                             | createFrame(),createLabel()                                        | I2    | 1 |
+| 1.3            | hardwareAbstraction                | `PressureSimulator`                   | PressureSimulator()                                                | I3      | 1 | 
+| 1.4            | hardwareAbstraction                | `PressureSimulator`                   | PressureSimulator()                                                | I3     | 1 |
 | 2.1            | Display output                     | `Display`                             | createFrame(),createLabel()                                        |       |  2 |               
 | 2.2            | Display output                     | `Display`                             | createFrame(),createLabel()                                        |       | 2 |
 | 2.5            | Display output                     | `Display`                             | createFrame(),createLabel(),updateTime(),                          |       | 2 |
@@ -16,6 +18,6 @@ Sprints impementiert wurden in Implementierung.md aufzufinden.
 | 3.2 | hardwareAbstraction, Calculation Logic, Display output | `DialysateSimulator`,`CheckDialysateTemeprature` ,`Display`| createFrame(),createLabel(),simulateTemperature(),checkDialysateTemperature()  |  M4, M6  | 2 |
 | 4.1            | Display output                     | `Display`                             | createFrame(),createLabel(),updateTime(),                          | M1      | 1 |
 | 4.2            | Display output                     | `TimerButton`                         | increaseRemainingTime(), decreaseTimeRemaining(),createFrame()     | M2, M3, I1 | 1     |
-| 1.3            | hardwareAbstraction                | `PressureSimulator`                   | PressureSimulator()                                                | I3      | 1 | 
-| 1.4            | hardwareAbstraction                | `PressureSimulator`                   | PressureSimulator()                                                | I3     | 1 |
+
+
 
