@@ -55,14 +55,10 @@ NR  |                  Titel                   |                       Beschreib
 
 1.8     Warunung bei geringen Werten                Warnung bei zu geringem Arterien oder Venösem Druck
 
-2.4     Warunung bei Sensorausfall                  Fehlermeldung wenn die gemessene UF Menge null
-                                                    ergibt
 
 3.3     Warnung bie zu niedriegem Dialysat           Warnung bei unterschreiten eines mindestfüllstands 
         Füllstand                                   
 
-3.4     Warnung bei Temperatur Sensor ausfall       Warnung wenn keine Temperatur des Dialysats gemessen
-                                                    werden kann
 
 3.5     Warnung bei zu hoher oder niedriger         Warnung bei messung einer Temperatur über oder unter
         Dialysat Temperatur                         dem optimalen Temperaturbereich für Dialysat
@@ -100,6 +96,9 @@ NR  |                  Titel                   |                       Beschreib
 2.4    Beendung der Dialyse bei erreichen       Sobald das UF-Ziel erreicht wird, wird die Dialyse
         des UF-Ziels                            beendet
 
+2.6     Warunung bei Sensorausfall                  Fehlermeldung wenn die gemessene UF Menge null
+                                                    ergibt
+
 3.3     Beendung der Dialyse sobald Dialysat    Die Dialyse wird beendet wenn kein Dialysat mehr
         aufgebarucht ist                        vorhanden ist
 
@@ -109,6 +108,9 @@ NR  |                  Titel                   |                       Beschreib
 3.5     Messung des Dialysat Füllstands         Messung des aktuellen Dialysat Füllstands
 
 3.6     Messung der Dialysat Temperatur         Messung der aktuellen Dialysat Temperatur
+
+3.7     Warnung bei Temperatur Sensor ausfall       Warnung wenn keine Temperatur des Dialysats gemessen
+                                                    werden kann
 
 4.3     Automatisches Beenden der Dialyse        Nach ablauf der Dialysezeit wird die dialyse 
         nach ablauf der vorher definierten       automatisch beendet werden
