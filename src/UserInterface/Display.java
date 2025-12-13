@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.function.Supplier;
 
 
@@ -32,49 +33,40 @@ public class Display extends JFrame implements ActionListener{
      * @param label2
      * @param label3
      */
-    public void createFrame(JLabel arterialPressure, JLabel venousPressure, JLabel timer, JLabel dialysateLevel, JLabel dialysateTemperature,
-        JLabel ufCurrent, JLabel ufRate, JLabel ufGoal
-    ){
+public void createFrame(List<JLabel> labels){
 
-        JFrame display = new JFrame();
+    JFrame display = new JFrame();
 
-        display.setTitle("Dialysegerät Display");
-        display.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        display.setSize(1220,1200);
-        display.setLayout(null);
+    display.setTitle("Dialysegerät Display");
+    display.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    display.setSize(1220,1200);
+    display.setLayout(null);
 
-        display.add(arterialPressure);
-        display.add(venousPressure);
-        display.add(timer);
-        display.add(dialysateLevel);
-        display.add(dialysateTemperature);
+    // Automatisch alle Labels hinzufügen  
+    labels.forEach(display::add);
 
-        display.add(ufCurrent);
-        display.add(ufRate);
-        display.add(ufGoal);
-
-        display.setVisible(true);
-
-        startStopButton = new JButton();
-        startStopButton.setBounds(525, 405, 100, 50);
-        startStopButton.setText("start");
-        startStopButton.addActionListener(this);
-
-        addRemainingTimeButton = new JButton();
-        addRemainingTimeButton.setBounds(680, 300, 50, 100);
-        addRemainingTimeButton.setText("+");
-        addRemainingTimeButton.addActionListener(this);
-
-        decreaseRemainingTimeButton = new JButton();
-        decreaseRemainingTimeButton.setBounds(420, 300, 50, 100);
-        decreaseRemainingTimeButton.setText("-");
-        decreaseRemainingTimeButton.addActionListener(this);
+    display.setVisible(true);
 
 
-        display.add(addRemainingTimeButton);
-        display.add(decreaseRemainingTimeButton);
-        display.add(startStopButton);
-    }
+    startStopButton = new JButton();
+    startStopButton.setBounds(525, 405, 100, 50);
+    startStopButton.setText("start");
+    startStopButton.addActionListener(this);
+
+    addRemainingTimeButton = new JButton();
+    addRemainingTimeButton.setBounds(680, 300, 50, 100);
+    addRemainingTimeButton.setText("+");
+    addRemainingTimeButton.addActionListener(this);
+
+    decreaseRemainingTimeButton = new JButton();
+    decreaseRemainingTimeButton.setBounds(420, 300, 50, 100);
+    decreaseRemainingTimeButton.setText("-");
+    decreaseRemainingTimeButton.addActionListener(this);
+
+    display.add(addRemainingTimeButton);
+    display.add(decreaseRemainingTimeButton);
+    display.add(startStopButton);
+}
 
 /**
  * Creates labels with predetermined sizes which update their content every second.
@@ -87,39 +79,38 @@ public class Display extends JFrame implements ActionListener{
  * @param yCoordinate y coordinate inside the frame
  * @return
  */
-    public static JLabel createLabel(Supplier<String> valueSupplier, String title, String unit, int xCoordinate, int yCoordinate){
+public static JLabel createLabel(LabelConfigPojo config){
 
-        JLabel label = new JLabel();
-        Border border = BorderFactory.createLineBorder(java.awt.Color.BLACK, 2);
+    JLabel label = new JLabel();
+    Border border = BorderFactory.createLineBorder(java.awt.Color.BLACK, 2);
 
-        label.setBorder(border);
-        label.setFont(new Font("Comic Sans MS", Font.BOLD, 20)); 
-        
+    label.setBorder(border);
+    label.setFont(new Font("Comic Sans MS", Font.BOLD, 20)); 
+
     label.setText("<html><div style='text-align:center;'>"
-                  + "<span style='font-size:12px;'>" + title + "</span><br>"
-                  + "<span style='font-size:12px;'>" + unit + "</span><br>"
-                  + "<span style='font-size:24px;'>---</span>"
-                  + "</div></html>");
+            + "<span style='font-size:12px;'>" + config.getTitle() + "</span><br>"
+            + "<span style='font-size:12px;'>" + config.getUnit() + "</span><br>"
+            + "<span style='font-size:24px;'>---</span>"
+            + "</div></html>");
 
+    label.setBounds(config.getX(), config.getY(), 200, 100);
+    label.setHorizontalAlignment(SwingConstants.CENTER);
+    label.setVerticalAlignment(SwingConstants.CENTER);
 
-        label.setBounds(xCoordinate, yCoordinate, 200, 100); 
-        label.setHorizontalAlignment(SwingConstants.CENTER);
-        label.setVerticalAlignment(SwingConstants.CENTER);
-
-        Timer timer = new Timer(1000, e -> {
-            if(state == true) {
+    Timer timer = new Timer(1000, e -> {
+        if (state) {
             label.setText("<html><div style='text-align:center;'>"
-                          + "<span style='font-size:12px;'>" + title + "</span><br>"
-                          + "<span style='font-size:12px;'>" + unit + "</span><br>"
-                          + "<span style='font-size:24px;'>" + valueSupplier.get() + "</span>"
-                          + "</div></html>");
-            }
-        });
+                    + "<span style='font-size:12px;'>" + config.getTitle() + "</span><br>"
+                    + "<span style='font-size:12px;'>" + config.getUnit() + "</span><br>"
+                    + "<span style='font-size:24px;'>" + config.getValueSupplier().get() + "</span>"
+                    + "</div></html>");
+        }
+    });
 
-            timer.start();
+    timer.start();
 
-        return label;
-    }
+    return label;
+}
 
     /**
      * foramtes the time to hh:mm:ss and subtracts 1s from the reamining time
