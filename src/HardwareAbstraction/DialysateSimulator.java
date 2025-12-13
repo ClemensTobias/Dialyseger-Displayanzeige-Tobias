@@ -12,7 +12,7 @@ public class DialysateSimulator {
 
 
         
-        if (Display.remainingTime == LocalTime.of(0,2,30)) {
+        if (Display.secondCounter % 30 == 0) {
 
             
             int delta = Math.random() < 0.5 ? -1 : 1;
@@ -21,6 +21,7 @@ public class DialysateSimulator {
 
     
         }
+
 
         return String.valueOf(temperature);
     }

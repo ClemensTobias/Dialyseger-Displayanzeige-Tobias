@@ -1,7 +1,5 @@
 package CalculationLogic;
 
-import java.time.LocalTime;
-
 import Userinterface.Display;
 
 public class CheckDialysateLevel {
@@ -17,8 +15,9 @@ public class CheckDialysateLevel {
     static boolean dialysateLevelWarning = false;
 
     public static String increaseByFlowRate() {
+        Display.secondCounter++;
         
-        if (Display.remainingTime == LocalTime.of(0,2,30)) {
+        if (Display.secondCounter % 30 == 0) {
 
             ufCurrent += 1;
 
@@ -45,6 +44,10 @@ public class CheckDialysateLevel {
 
         return dialysateLevelString;
 
+    }
+
+        public static Boolean getDialysateLevelWarning() {
+        return dialysateLevelWarning;
     }
 
 

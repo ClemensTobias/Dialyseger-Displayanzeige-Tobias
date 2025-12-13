@@ -9,15 +9,18 @@ public class LabelConfigPojo {
     private String unit;
     private int x;
     private int y;
+    private Supplier<Boolean> showCondition;
+    private String type;
 
     public LabelConfigPojo() {}
 
-    public LabelConfigPojo(Supplier<String> valueSupplier, String title, String unit, int x, int y) {
+    public LabelConfigPojo(Supplier<String> valueSupplier, String title, String unit, int x, int y, String type) {
         this.valueSupplier = valueSupplier;
         this.title = title;
         this.unit = unit;
         this.x = x;
         this.y = y;
+        this.type = type;
     }
 
     public Supplier<String> getValueSupplier() { return valueSupplier; }
@@ -34,4 +37,12 @@ public class LabelConfigPojo {
 
     public int getY() { return y; }
     public void setY(int y) { this.y = y; }
+
+    public Supplier<Boolean> getShowSupplier() { return showCondition; }
+    public void setShowSupplier(Supplier<Boolean> showSupplier) {
+    this.showCondition = showSupplier;
+}
+
+    public String getType() { return type; }
+    public void setType(String type) { this.type = type;}
 }

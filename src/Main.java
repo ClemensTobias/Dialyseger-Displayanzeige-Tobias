@@ -15,11 +15,12 @@ public class Main{
 
     public static void main(String[] args) {
 
-       LabelConfigPojo arterialPressurePojo = new LabelConfigPojo(() -> CheckArterialPressureValues.checkArterialPressure(),
+       LabelConfigPojo arterialPressurePojo = new LabelConfigPojo(() -> CheckArterialPressureValues.updateArterialPressure(),
 "Arterieller Druck",
         "in mmHg",
         10,
-        50
+        50,
+        "Field"
 );
 
 LabelConfigPojo venousPressurePojo = new LabelConfigPojo(
@@ -27,7 +28,8 @@ LabelConfigPojo venousPressurePojo = new LabelConfigPojo(
         "Venöser Druck",
         "in mmHg",
         990,
-        50
+        50,
+        "Field"
 );
 
 LabelConfigPojo dialysateLevelPojo = new LabelConfigPojo(
@@ -35,7 +37,8 @@ LabelConfigPojo dialysateLevelPojo = new LabelConfigPojo(
         "Dialysat füllhöhe",
         "in l",
         10,
-        200
+        200,
+        "Field"
 );
 
 LabelConfigPojo dialysateTemperaturePojo = new LabelConfigPojo(
@@ -43,7 +46,8 @@ LabelConfigPojo dialysateTemperaturePojo = new LabelConfigPojo(
         "Dialysat Temperatur",
         "in °C",
         990,
-        200
+        200,
+        "Field"
 );
 
 LabelConfigPojo ufCurrentPojo = new LabelConfigPojo(
@@ -51,7 +55,8 @@ LabelConfigPojo ufCurrentPojo = new LabelConfigPojo(
         "UF Aktuell",
         "in L",
         250,
-        50
+        50,
+        "Field"
 );
 
 LabelConfigPojo ufRatePojo = new LabelConfigPojo(
@@ -59,7 +64,8 @@ LabelConfigPojo ufRatePojo = new LabelConfigPojo(
         "UF Ziel",
         "in L/m",
         500,
-        50
+        50,
+        "Field"
 );
 
 LabelConfigPojo ufGoalPojo = new LabelConfigPojo(
@@ -67,7 +73,8 @@ LabelConfigPojo ufGoalPojo = new LabelConfigPojo(
         "UF Ziel",
         "in L",
         750,
-        50
+        50,
+        "Field"
 );
 
 LabelConfigPojo timerPojo = new LabelConfigPojo(
@@ -75,8 +82,52 @@ LabelConfigPojo timerPojo = new LabelConfigPojo(
         "Verbleibende Zeit",
         "in hh:mm:ss",
         475,
-        300
+        300,
+        "Field"
 );
+
+LabelConfigPojo arterialPressureWarningPojo = new LabelConfigPojo(
+        () -> Display.updateTime(),
+        "Arterieller Druck Ausßerhalb der erlabuten Grenzen",
+        "in hh:mm:ss",
+        0,
+        800,
+        "Warning"
+);
+
+LabelConfigPojo venousPressureWarningPojo = new LabelConfigPojo(
+        () -> Display.updateTime(),
+        "Venöser Druck Ausßerhalb der erlabuten Grenzen",
+        "in hh:mm:ss",
+        0,
+        690,
+        "Warning"
+);
+
+LabelConfigPojo dialysateLevelWarningPojo = new LabelConfigPojo(
+        () -> Display.updateTime(),
+        "Geringes Dialysat Level erkannt",
+        "in hh:mm:ss",
+        0,
+        580,
+        "Warning"
+);
+
+LabelConfigPojo dialysateTemepratureWarningPojo = new LabelConfigPojo(
+        () -> Display.updateTime(),
+        "Temperatur des Dialysats außerhalb der erlabuten Grenzen",
+        "in hh:mm:ss",
+        0,
+        470,
+        "Warning"
+);
+
+
+
+arterialPressureWarningPojo.setShowSupplier(() -> CheckArterialPressureValues.getArterialPressureWarning());
+venousPressureWarningPojo.setShowSupplier(() -> CheckVenousPressureValues.getVenousPressureWarning());
+dialysateLevelWarningPojo.setShowSupplier(() -> CheckDialysateLevel.getDialysateLevelWarning());
+dialysateTemepratureWarningPojo.setShowSupplier(() -> CheckDialysateTemperature.getDialysateTemperatureWarning());
 
         
 
@@ -89,6 +140,11 @@ JLabel ufRate           = Display.createLabel(ufRatePojo);
 JLabel ufGoal           = Display.createLabel(ufGoalPojo);
 JLabel timer            = Display.createLabel(timerPojo);
 
+JLabel arterialPressureWarning = Display.createLabel(arterialPressureWarningPojo);
+JLabel venousPressureWarning = Display.createLabel(venousPressureWarningPojo);
+JLabel dialysateLevelWarning = Display.createLabel(dialysateLevelWarningPojo);
+JLabel dialysateTemperatureWarning = Display.createLabel(dialysateTemepratureWarningPojo);
+
 List<JLabel> labels = List.of(
             arterialPressure,
             venousPressure,
@@ -97,7 +153,12 @@ List<JLabel> labels = List.of(
             ufCurrent,
             ufRate,
             ufGoal,
-            timer
+            timer,
+            arterialPressureWarning,
+            venousPressureWarning,
+            dialysateLevelWarning,
+            dialysateTemperatureWarning
+
     );
 
 

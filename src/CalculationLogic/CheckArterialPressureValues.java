@@ -2,28 +2,29 @@ package CalculationLogic;
 
 import Hardwareabstraction.ArterialPressureSimulator;
 
-public class CheckArterialPressureValues{
+public class CheckArterialPressureValues {
 
     static int min = -200;
-    static int max =  200;
-    static boolean arterialPressureWarning = false;
+    static int max = 200;
 
-public static String checkArterialPressure() {
+    private static int currentPressure;
+    public static Boolean arterialPressureWarning = false;
 
-    String arterialPressure = ArterialPressureSimulator.generateRandomArterialPressure();
+    public static String updateArterialPressure() {
 
-    int pressureValue = Integer.parseInt(arterialPressure);
+        currentPressure = Integer.parseInt(
+            ArterialPressureSimulator.generateRandomArterialPressure()
+        );
 
-    if (pressureValue >= max) {
-        arterialPressureWarning = true;
-    } else if (pressureValue <= min) {
-        arterialPressureWarning = true;
-    } else {
-        arterialPressureWarning = false;
+            if(currentPressure > max) {
+                arterialPressureWarning = true;
+            } else if (currentPressure < min){
+                arterialPressureWarning = false;
+            }
+                return String.valueOf(currentPressure);
     }
 
-    return arterialPressure;
-}
-
-    
+    public static Boolean getArterialPressureWarning() {
+        return arterialPressureWarning;
+    }
 }

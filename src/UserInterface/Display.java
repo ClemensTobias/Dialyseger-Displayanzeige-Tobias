@@ -3,6 +3,8 @@ package Userinterface;
 import javax.swing.*;
 import javax.swing.border.Border;
 
+import CalculationLogic.CheckArterialPressureValues;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,6 +18,7 @@ public class Display extends JFrame implements ActionListener{
 
     static boolean state = false;
     public static LocalTime remainingTime = LocalTime.of(0, 3,0);
+    public static int secondCounter = 0;
 
     static JButton addRemainingTimeButton;
     static JButton decreaseRemainingTimeButton;
@@ -87,6 +90,8 @@ public static JLabel createLabel(LabelConfigPojo config){
     label.setBorder(border);
     label.setFont(new Font("Comic Sans MS", Font.BOLD, 20)); 
 
+    if(config.getType().equals("Field")) {
+
     label.setText("<html><div style='text-align:center;'>"
             + "<span style='font-size:12px;'>" + config.getTitle() + "</span><br>"
             + "<span style='font-size:12px;'>" + config.getUnit() + "</span><br>"
@@ -98,16 +103,38 @@ public static JLabel createLabel(LabelConfigPojo config){
     label.setVerticalAlignment(SwingConstants.CENTER);
 
     Timer timer = new Timer(1000, e -> {
+        
         if (state) {
             label.setText("<html><div style='text-align:center;'>"
                     + "<span style='font-size:12px;'>" + config.getTitle() + "</span><br>"
                     + "<span style='font-size:12px;'>" + config.getUnit() + "</span><br>"
                     + "<span style='font-size:24px;'>" + config.getValueSupplier().get() + "</span>"
                     + "</div></html>");
+
+
         }
     });
 
     timer.start();
+
+} else if(config.getType().equals("Warning")){
+
+    label.setText(config.getTitle());
+    label.setBounds(config.getX(), config.getY(), 1210, 100);
+    label.setHorizontalAlignment(SwingConstants.CENTER);
+    label.setVerticalAlignment(SwingConstants.CENTER);
+
+    label.setVisible(false);
+
+    Timer timer2 = new Timer(1000, e -> {
+        
+        Boolean show = config.getShowSupplier().get();
+        label.setVisible(show);
+
+    });
+
+    timer2.start();
+}
 
     return label;
 }

@@ -25,4 +25,7 @@ public class CheckDialysateTemperature {
         return temperatureString;
     }
     
+        public static Boolean getDialysateTemperatureWarning() {
+        return dialysateTempertureWarning;
+    }
 }

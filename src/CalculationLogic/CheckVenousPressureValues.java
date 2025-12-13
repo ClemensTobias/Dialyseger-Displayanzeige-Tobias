@@ -24,5 +24,9 @@ public static String checkVenousPressure() {
 
     return venousPressure;
 }
+
+    public static Boolean getVenousPressureWarning() {
+        return venousPressureWarning;
+    }
     
 }
