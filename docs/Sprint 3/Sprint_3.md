@@ -1,4 +1,4 @@
-# Sprint 2
+# Sprint 3
 
 ## Sprint Planung
 
@@ -47,9 +47,8 @@ Basierend auf den hier ausgewählten Requierements wurde die Archtiektur des 3 S
 Zusätzlich wurden für die Requirements des 3. Sprints ein letztes Klassendiagramm, ein dazu passendes Sequenzdiagramm und 
 ein Kommunikationsdiagramm erstellt, um die durch den 3 Sprint verursachten änderungen klarzustellen.
 
-##Aktueller Stand
+## Aktueller Stand
 
-Ich bin aktuell (14.12 00:51) noch nicht mit allen aufgaben fertig. Aktueller Stand ist, das alle Warnings, also die Requirements 1.8, 1.9, 3.3, und 3.5 vollständig und funktionsfähig implementiert sind.
+Aktueller Stand ist, das alle Warnings, also die Requirements 1.8, 1.9, 3.3, und 3.5 vollständig und funktionsfähig implementiert sind.
 Dabei hat sich bis jetzt keine Änderung im Design ergeben. 
 
-Da ich noch nicht weiß, wie ich eine Diagrammdarstellung umsetzen kann wurden auch die Design Diagramme noch nicht angepasst um die dafür benötigten Klassen widerzuspiegeln
