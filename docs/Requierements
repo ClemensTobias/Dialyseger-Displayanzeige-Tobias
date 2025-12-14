@@ -50,11 +50,11 @@ NR  |                  Titel                   |                       Beschreib
 --------------------------------------------------------------------------------------------------------
 NR  |                  Titel                   |                       Beschreibung                     |
 
-1.9    Warnung bei Sensorausfall                   Fehlermeldungen wenn Arterien oder Venöser Druck
-                                                    während der Laufzeit auf null fallen
+1.9    Warnung bei zu hohem/geringen                   Fehlermeldungen wenn der Arterielle Druck
+       Arteriellen Druck                              während der Laufzeit den max/min wert überschreitet
 
-1.8     Warunung bei geringen Werten                Warnung bei zu geringem Arterien oder Venösem Druck
-
+1.8     Warunung bei zu hohem/geringen                Fehlermeldungen wenn der Venöse Druck
+        Venöen Druck                                  während der Laufzeit den max/min wert überschreitet
 
 3.3     Warnung bie zu niedriegem Dialysat           Warnung bei unterschreiten eines mindestfüllstands 
         Füllstand                                   
