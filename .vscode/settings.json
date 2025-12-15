@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\cleme\\Desktop\\jcommon-1.0.23.jar",
+        "c:\\Users\\cleme\\Desktop\\jfreechart-1.0.19.jar"
+    ]
+}

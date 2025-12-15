@@ -14,6 +14,8 @@ import java.util.List;
 import java.util.function.Supplier;
 
 
+
+
 public class Display extends JFrame implements ActionListener{
 
     static boolean state = false;
@@ -47,6 +49,9 @@ public void createFrame(List<JLabel> labels){
 
     // Automatisch alle Labels hinzufügen  
     labels.forEach(display::add);
+
+    ArterialPressureChartPanel chart = new ArterialPressureChartPanel();
+    display.add(chart);
 
     display.setVisible(true);
 
