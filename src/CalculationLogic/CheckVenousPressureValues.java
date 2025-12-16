@@ -10,7 +10,7 @@ public class CheckVenousPressureValues {
 
 public static String checkVenousPressure() {
 
-    String venousPressure = VenousPressureSimulator.generateRandomArterialPressure();
+    String venousPressure = VenousPressureSimulator.generateRandomVenousPressure();
 
     int pressureValue = Integer.parseInt(venousPressure);
 

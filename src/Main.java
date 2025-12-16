@@ -91,7 +91,7 @@ LabelConfigPojo arterialPressureWarningPojo = new LabelConfigPojo(
         "Arterieller Druck Ausßerhalb der erlabuten Grenzen",
         "in hh:mm:ss",
         0,
-        800,
+        900,
         "Warning"
 );
 
@@ -100,7 +100,7 @@ LabelConfigPojo venousPressureWarningPojo = new LabelConfigPojo(
         "Venöser Druck Ausßerhalb der erlabuten Grenzen",
         "in hh:mm:ss",
         0,
-        690,
+        790,
         "Warning"
 );
 
@@ -109,7 +109,7 @@ LabelConfigPojo dialysateLevelWarningPojo = new LabelConfigPojo(
         "Geringes Dialysat Level erkannt",
         "in hh:mm:ss",
         0,
-        580,
+        680,
         "Warning"
 );
 
@@ -118,7 +118,7 @@ LabelConfigPojo dialysateTemepratureWarningPojo = new LabelConfigPojo(
         "Temperatur des Dialysats außerhalb der erlabuten Grenzen",
         "in hh:mm:ss",
         0,
-        470,
+        570,
         "Warning"
 );
 

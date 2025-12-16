@@ -2,25 +2,27 @@ package Userinterface;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.function.Supplier;
 
 import org.jfree.chart.*;
 import org.jfree.chart.plot.*;
 import org.jfree.data.xy.*;
 
-public class ArterialPressureChartPanel extends JPanel {
 
-    private final XYSeries series;
+public class PressureChartPanel extends JPanel {
 
-    public ArterialPressureChartPanel() {
+    public XYSeries series;
+
+    public void PressureLineChartPanel(Supplier<int[]> ringBufferSupplier, int xCoordinate, int yCoordinate, String name, String title) {
         setLayout(new BorderLayout());
-        setBounds(10, 320, 400, 300); // Position im Display
+        setBounds(xCoordinate, yCoordinate, 400, 240); // Position im Display
 
-        series = new XYSeries("Arterieller Druck");
+        series = new XYSeries(name);
 
         XYSeriesCollection dataset = new XYSeriesCollection(series);
 
         JFreeChart chart = ChartFactory.createXYLineChart(
-                "Arterieller Druck (letzte 10 Sekunden)",
+                title,
                 "Zeit",
                 "mmHg",
                 dataset,
@@ -33,18 +35,18 @@ public class ArterialPressureChartPanel extends JPanel {
         ChartPanel chartPanel = new ChartPanel(chart);
         add(chartPanel, BorderLayout.CENTER);
 
-        startUpdateTimer();
+        startUpdateTimer(ringBufferSupplier);
     }
 
-    private void startUpdateTimer() {
-        new Timer(1000, e -> updateSeries()).start();
+    private void startUpdateTimer(Supplier<int[]> ringBufferSupplier) {
+        new Timer(1000, e -> updateSeries(ringBufferSupplier)).start();
     }
 
-    private void updateSeries() {
+    private void updateSeries(Supplier<int[]> ringBufferSupplier) {
         series.clear();
 
         int t = 0;
-        for (int value : Hardwareabstraction.ArterialPressureSimulator.getLastValues()) {
+        for (int value : ringBufferSupplier.get()) {
             series.add(t++, value);
         }
     }

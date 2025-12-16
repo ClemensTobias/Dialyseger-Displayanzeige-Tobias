@@ -4,6 +4,8 @@ import javax.swing.*;
 import javax.swing.border.Border;
 
 import CalculationLogic.CheckArterialPressureValues;
+import Hardwareabstraction.ArterialPressureSimulator;
+import Hardwareabstraction.VenousPressureSimulator;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -12,6 +14,8 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.function.Supplier;
+
+import Userinterface.PressureChartPanel;
 
 
 
@@ -50,8 +54,16 @@ public void createFrame(List<JLabel> labels){
     // Automatisch alle Labels hinzufügen  
     labels.forEach(display::add);
 
-    ArterialPressureChartPanel chart = new ArterialPressureChartPanel();
-    display.add(chart);
+    PressureChartPanel arterialPressureChart = new PressureChartPanel();
+    arterialPressureChart.PressureLineChartPanel(() -> ArterialPressureSimulator.getLastValues(),10, 320, "Arterieller Druck", "Arterieller Druck (letzte 10 Sekunden)");
+    display.add(arterialPressureChart);
+
+    PressureChartPanel venousPressureChartPanel = new PressureChartPanel();
+    venousPressureChartPanel.PressureLineChartPanel(() -> VenousPressureSimulator.getLastValues(), 790, 320, "Venöser Druck", "Venöser Druck (letzte 10 Sekunden)");
+    display.add(venousPressureChartPanel);
+
+
+
 
     display.setVisible(true);
 
