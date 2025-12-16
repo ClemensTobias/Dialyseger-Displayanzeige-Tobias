@@ -49,6 +49,6 @@ ein Kommunikationsdiagramm erstellt, um die durch den 3 Sprint verursachten änd
 
 ## Aktueller Stand
 
-Aktueller Stand ist, das alle Warnings, also die Requirements 1.8, 1.9, 3.3, und 3.5 vollständig und funktionsfähig implementiert sind.
-Dabei hat sich bis jetzt keine Änderung im Design ergeben. 
+Diagramme müssen noch hochgeladen und eingefügt werde, Testfälle noch dokumentiert und eine Retroperspektive gezogen werden
+
 
