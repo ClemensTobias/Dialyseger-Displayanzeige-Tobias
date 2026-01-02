@@ -89,8 +89,9 @@ Stichpunkthaltige Reflextion über den Sprint:
 Bei der Auswahl dafür, was in zukünftigen Sprints umzusetzen ist werde ich mehr auf äußere Faktoren achten, und dementsprechend die workload anpassen. 
 
 Aktueller Stand:
-UF aktuell, stand und Zeil, sowie der Aktuelle Dialysat Stand sowie dessen Temperatur werden erfolgreich simuliert und dargestellt. Auch die UF Rate und deren Einfluss (erhöhung des UF Stands nach 30s) wurde erfolgreich implementiert.
+UF aktuell, UF stand und UF Ziel, sowie der Aktuelle Dialysat Stand und dessen Temperatur werden erfolgreich simuliert und dargestellt. Auch die UF Rate und deren Einfluss (erhöhung des UF Stands nach 30s) wurde erfolgreich implementiert.
 Die Warnausgaben konnten noch nicht vollständig umgesetzt werden, es wurde bis jetzt nur die aktualisierung der CheckValue flags gesetzt, die für die jeweilige Warnung überprüfen, ob eine Warnmeldung angezeigt werden muss
+
 
 
 
