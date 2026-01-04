@@ -99,7 +99,7 @@ NR  |                  Titel                   |                       Beschreib
 2.6     Warunung bei Sensorausfall                  Fehlermeldung wenn die gemessene UF Menge null
                                                     ergibt
 
-3.3     Beendung der Dialyse sobald Dialysat    Die Dialyse wird beendet wenn kein Dialysat mehr
+3.8     Beendung der Dialyse sobald Dialysat    Die Dialyse wird beendet wenn kein Dialysat mehr
         aufgebarucht ist                        vorhanden ist
 
 3.4     Beendung der Dialyse bei erreichen      Sobald das Dialysat den temperatur normalbereich
