@@ -6,18 +6,24 @@ Sprints impementiert wurden in Implementierung.md aufzufinden.
 
 | Requirement-ID | Komponente                         | Klasse(n)                             | Schnittstelle(n)                                                  | Test   |  Sprint |
 |----------------|------------------------------------|---------------------------------------|-------------------------------------------------------------------|--------|---------|
-| 1.1            | Display output                     | `Display`                             | createFrame(),createLabel()                                        | I2    |    1    |         
+| 1.1            | Display output                     | `Display`                             | createFrame(),createLabel()                                        | I2    |    1    |      
 | 1.2            | Display output                     | `Display`                             | createFrame(),createLabel()                                        | I2    | 1 |
 | 1.3            | hardwareAbstraction                | `PressureSimulator`                   | PressureSimulator()                                                | I3      | 1 | 
 | 1.4            | hardwareAbstraction                | `PressureSimulator`                   | PressureSimulator()                                                | I3     | 1 |
+| 1.8            |    Display output, Calculation Logic                  | CheckVenousPressure, `Display`                    |  checkVenousPressure(), createLabel()       |       |  3|  
+| 1.9            |    Display output, Calculation Logic                  | CheckArterialPressure, `Display`                  |  checkArterialPressure(), createLabel()     |       |  3|  
 | 2.1            | Display output                     | `Display`                             | createFrame(),createLabel()                                        |       |  2 |               
 | 2.2            | Display output                     | `Display`                             | createFrame(),createLabel()                                        |       | 2 |
 | 2.5            | Display output                     | `Display`                             | createFrame(),createLabel(),updateTime(),                          |       | 2 |
 | 2.6            | Calculation Logic                  | `CheckDialysateLevel`                 | reduceByFlowRate()                                                 |  I6   | 2 |
 | 3.1            | Display output                     | `Display`                             | createFrame(),createLabel()                                        |       | 2 |
 | 3.2 | hardwareAbstraction, Calculation Logic, Display output | `DialysateSimulator`,`CheckDialysateTemeprature` ,`Display`| createFrame(),createLabel(),simulateTemperature(),checkDialysateTemperature()  |  M4, M6  | 2 |
+| 3.3            |    Display output, Calculation Logic                  | CheckDialysateLevel, `Display`                    |  checkDialysateLevel(), createLabel()       |   I9   | 3 |  
+| 3.5            |    Display output, Calculation Logic                  | CheckDialysateTemperature, `Display`              |  checkDialysateTemperature, createLabel()   |    M9  | 3 |  
 | 4.1            | Display output                     | `Display`                             | createFrame(),createLabel(),updateTime(),                          | M1      | 1 |
 | 4.2            | Display output                     | `TimerButton`                         | increaseRemainingTime(), decreaseTimeRemaining(),createFrame()     | M2, M3, I1 | 1     |
-
-
+| 5.1            |    Display output                  | PressureChartPanel                     |  PressureChartPanel()                                                     |    I7  |  3 |                
+| 5.2            |    Display output                  | PressureChartPanel                     |  PressureChartPanel()                                                     |   I8   |  3|  
+| 5.3            |    Hardware abstraction            | ArterialPressureSimulator              |  getLastValue()                                                           |   M7, M8  | 3 |  
+| 5.4            |    Hardware abstraction            | VenousPressureSimulator                |  getLastValue()                                                           |       | 3 |  
 
