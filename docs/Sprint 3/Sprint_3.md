@@ -47,8 +47,37 @@ Basierend auf den hier ausgewählten Requierements wurde die Archtiektur des 3 S
 Zusätzlich wurden für die Requirements des 3. Sprints ein letztes Klassendiagramm, ein dazu passendes Sequenzdiagramm und 
 ein Kommunikationsdiagramm erstellt, um die durch den 3 Sprint verursachten änderungen klarzustellen.
 
-## Aktueller Stand
+[Überarbeitete_Diagramme](./Design_3.md)
 
-Diagramme müssen noch hochgeladen und eingefügt werde, Testfälle noch dokumentiert und eine Retroperspektive gezogen werden
+## Tests
+
+[Tests und ergebnisse](../referenziert/Test/Test1.md)
+
+## Erkenntnisse aus 3. Sprint
+
+**Positiv**
+- Projekt konnte erfolgreich fertiggestellt werden
+
+**Herausforderungen**
+- Einarbeitung in neue Tools
+
+**Gewonnene Erkenntnisse**
+
+
+Finaler Stand:
+Durch die Realisierung der Verschiednen Warn anzeigen, sowie der darstellung des Venösen und Arteriellen Drucks als Liniendiagramm, ist dieses Projekt Fertiggestellt.
+Alle Requirements, die zu beginn als umzusetzen definiert wurden, wurden damit implementiert. Abweichend von den Requirements wurde noch zusätzlich ein Start/Stop Knopf
+in die Simulation eingefügt
+
+
+
+
+
+
+
+
+
+
+
 
 
