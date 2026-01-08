@@ -56,18 +56,24 @@ ein Kommunikationsdiagramm erstellt, um die durch den 3 Sprint verursachten änd
 ## Erkenntnisse aus 3. Sprint
 
 **Positiv**
+- Alle Requirements konnten wie gedacht umgesetzt werden
+- Strukturen aus vorherigen sprints konnten leicht erweitert werden
 - Projekt konnte erfolgreich fertiggestellt werden
 
 **Herausforderungen**
 - Einarbeitung in neue Tools
+- Abstimmung zwischen Diagramm und angezeigten werten erreichen
 
 **Gewonnene Erkenntnisse**
+Eine saubere Architektur aus den frühen Sprints erleichtert spätere Erweiterungen erheblich.
+Tools können die Implementierung beschleunigen, erfordern jedoch Einarbeitung und bewusste Auswahl
 
 
 Finaler Stand:
 Durch die Realisierung der Verschiednen Warn anzeigen, sowie der darstellung des Venösen und Arteriellen Drucks als Liniendiagramm, ist dieses Projekt Fertiggestellt.
 Alle Requirements, die zu beginn als umzusetzen definiert wurden, wurden damit implementiert. Abweichend von den Requirements wurde noch zusätzlich ein Start/Stop Knopf
 in die Simulation eingefügt
+
 
 
 
